@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4fbc6e35ac.js" crossorigin="anonymous"></script>
+    <title>tic-tac-toe-02</title>
+  </head>
+  <body>
+    <main>
+        
+      <div class="grid" data-id="grid">
+
+        <!-- Scores -->
+        <div class="score green">
+          <p><i class="fa-solid fa-circle white" data-id="circle-1"></i>Player 1</p>
+          <span data-id="p1-wins">0 wins</span>
+        </div>
+        <div class="score">
+            <p>Ties</p>
+            <span data-id="ties">0</span>
+        </div>
+        <div class="score yellow">
+            <p><i class="fa-solid fa-circle gray" data-id="circle-2"></i>Player 2</p>
+            <span data-id="p2-wins">0 wins</span>
+        </div>
+
+        <!-- Turns -->
+        <div class="turn" data-id="turn">
+            <i class="fa-solid fa-x green"></i>
+            <p class="green">Player 1!</p>
+        </div>
+
+        <!-- Menu button -->
+        <div class="menu" data-id="menu">
+            <button class="menu-btn shadow" data-id="menu-btn">
+              Menu
+              <i class="fa-solid fa-chevron-down"data-id="menu-btn-chevron-down"></i>
+            </button>
+  
+            <div class="items hidden" data-id="menu-items">
+              <button data-id="reset-btn">Reset game</button>
+              <button data-id="new-round-btn">New round</button>
+            </div>
+        </div>
+
+        <!-- Squares -->
+        <div id="s-1" class="square shadow" data-id="square"></div>
+        <div id="s-2" class="square shadow" data-id="square"></div>
+        <div id="s-3" class="square shadow" data-id="square"></div>
+        <div id="s-4" class="square shadow" data-id="square"></div>
+        <div id="s-5" class="square shadow" data-id="square"></div>
+        <div id="s-6" class="square shadow" data-id="square"></div>
+        <div id="s-7" class="square shadow" data-id="square"></div>
+        <div id="s-8" class="square shadow" data-id="square"></div>
+        <div id="s-9" class="square shadow" data-id="square"></div>
+
+      </div>
+
+      <!-- Modal that opens when game ends -->
+      <div class="modal hidden" data-id="modal">
+        <div class="modal-contents">
+          <p data-id="modal-text">Player 1 wins!</p>
+          <button class="shadow" data-id="modal-btn">Play again</button>
+        </div>
+      </div>
+  
+    </main>
+
+    <footer>
+      <p>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="https://github.com/leomathot" target="_blank">leomathot</a>
+      </p>
+      </p>
+    </footer>
+
+    <script src="./js/app.js" type="module"></script>
+
+  </body>
+</html>
