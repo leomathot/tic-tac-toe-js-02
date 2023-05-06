@@ -122,7 +122,7 @@ main {
 }
 
 .score span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -209,7 +209,7 @@ button {
   top: calc(60% - 10px);
   right: 0;
   width: 100%;
-  padding: 20px 0 10px 0;
+  padding: 15px 0 10px 0;
   border-radius: 0 0 6px 6px;
   animation: 0.05s linear show-list-animation;
 }
@@ -227,7 +227,8 @@ button {
   background-color: transparent;
   color: var(--white);
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin-top: 20px;
 }
 
 .items button:hover {
