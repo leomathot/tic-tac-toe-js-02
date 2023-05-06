@@ -30,6 +30,10 @@ body {
   background-color: var(--dark-gray);
   color: var(--white);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -37,7 +41,7 @@ main {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 /* Shared uility classes */
@@ -316,7 +320,6 @@ button {
 
 footer {
   color: var(--white);
-  margin-top: 50px;
   font-size: 0.9rem;
 }
 
