@@ -89,8 +89,10 @@ $$ = {}
 
     #closeMenu() {
         this.$.menuItems.classList.add("hidden");
+        this.$.menuItems.classList.add("square-shadow");
         
         this.$.menuBtn.classList.remove("light-blue");
+        this.$.menuBtn.classList.remove("light-shadow");
 
         const icon = this.$.menuBtn.querySelector("i");
         icon.classList.add("fa-chevron-down");
@@ -100,6 +102,8 @@ $$ = {}
     #toggleMenu() {
         this.$.menuBtn.classList.toggle("light-blue");
         this.$.menuItems.classList.toggle("hidden");
+        this.$.menuBtn.classList.toggle("light-shadow");
+        this.$.menuItems.classList.toggle("square-shadow");
 
         const icon = this.$.menuBtn.querySelector("i");
         icon.classList.toggle("fa-chevron-down");
@@ -138,5 +142,4 @@ $$ = {}
         if(!elList) throw new Error("Could not find elements")
         return elList
     }
-
 }

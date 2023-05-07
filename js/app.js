@@ -31,7 +31,6 @@ function init() {
           store.stats.ties,
           store.game.whoStarts
         );
-
     })
 
     view.bindNewRoundEvent(event => {
@@ -75,6 +74,8 @@ function init() {
 
         // Set the next player's turn indicator
         view.setTurnIndicator(store.game.currentPlayer);
+        
+        view.closeAll();
     })
     
 }
